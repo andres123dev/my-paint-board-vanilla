@@ -4,6 +4,8 @@
   <b>Language:</b> <a href="#readme-es">Español</a> | <a href="#readme-en">English</a>
 </div>
 
+<br>
+
 <div>
   <table align="center" border="0" cellpadding="0" cellspacing="0">
     <tbody>
@@ -27,7 +29,6 @@
   </table>
 </div>
 
-<hr>
 <div id="readme-es">
 <hr>
 
