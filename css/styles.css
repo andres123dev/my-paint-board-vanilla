@@ -1,0 +1,156 @@
+/** Copyright © Andrés Fernández Burón
+ *  November of 2021
+ *
+ *  Blackboard with vanilla Javascript
+ *  Application made with HTML, CSS, and JavaScript, using the W3C event model.
+ *
+ *  File with the CSS styles of the application view.
+ */
+
+/* -- ALL THE DOCUMENT -------------------------------- */
+body {
+    background-color: silver;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button,
+input {
+    cursor: pointer;
+}
+
+button {
+    padding: 4px 10px;
+    font-weight: bold;
+    border-style: outset;
+    border-radius: 5px;
+}
+button:hover {
+    border-style: inset;
+}
+
+.error p {
+    color: crimson !important;
+}
+
+/* -- PAGE HEADER ------------------------------------- */
+header {
+    color: whitesmoke;
+    background-color: darkslategray;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 1px 0 darkorange;
+}
+
+/* -- PAGE MAIN --------------------------------------- */
+
+/* ---- THE CONTROL PANEL ---- */
+#control-panel {
+    
+}
+#control-panel table {
+    border-collapse: collapse;
+}
+
+#control {
+    width: 100%;
+    background-color: slategrey;
+    border: 0 solid darkorange;
+    border-width: 2px 0;
+}
+
+#control-panel input[type=number] {
+    max-width: 50px;
+}
+#control-panel input[type=color] {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#control-panel label {
+    font-weight: bold;
+    /*
+    */
+}
+#opciones th {
+    text-align: left;
+}
+#control-panel th label {
+    color: darkorange;
+    text-shadow: 1px 1px 0 darkred;
+    padding-left: 4px;
+}
+#control-panel td label {
+    color: darkcyan;
+    text-shadow: 1px 1px 0 black;
+    padding-left: 4px;
+}
+
+#control button {
+    border-color: teal;
+    color: teal;
+    text-shadow: 0 1px 0 black;
+}
+#control button:hover {
+    color: whitesmoke;
+    text-shadow: 1px 1px 0 black;
+    background-color: royalblue;
+    border-color: navy;
+}
+
+#opciones {
+    margin: 0 auto;
+    background-color: darkgray;
+    border: 2px solid darkorange;
+    border-top-width: 0;
+}
+#opciones td {
+    padding: 4px;
+}
+
+/* ---- THE PAINT BOARD ---- */
+#pizarra {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+#pizarra td {
+    background-color: black;
+}
+
+/* ---- THE FEEDBACK POPUP ---- */
+#feedback {
+    background-color: whitesmoke;
+    border: 2px outset darkorange;
+    border-radius: 10px;
+}
+#feedback p {
+    font-weight: bold;
+    color: darkcyan;
+    text-shadow: 1px 1px 0 darkslategray;
+}
+
+#feedback button {
+    margin-top: 2vh;
+    color: whitesmoke;
+    background-color: forestgreen;
+}
+#feedback button:hover {
+    color: green;
+    background-color: whitesmoke;
+    border-color: forestgreen;
+}
+
+/* -- PAGE FOOTER ------------------------------------- */
+footer {
+    background-color: darkslategray;
+    border-top: 2px solid darkorange;
+}
+footer p {
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    text-shadow: 1px 1px 0 navy;
+}

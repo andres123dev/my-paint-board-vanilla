@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Board vanilla</title>
+    <meta name="author" content="Andrés Fernández Burón">
+    <meta name="copyright" content="Copyright 2021 &copy; All rights reserved">
+    <meta name="description" content="Paint board with just HTML, CSS and vanilla Javascript, using W3C event model.">
+    <link rel="stylesheet" href="css/position.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/feedback.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/paintboard/options.js"></script>
+    <script src="js/paintboard/pencil.js"></script>
+    <script src="js/paintboard/board.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header><h1>Paint Board Vanilla</h1></header>
+    <main>
+        <article>
+            <section id="control-panel">
+                <table id="control">
+                    <thead>
+                        <tr>
+                            <td>
+                                <input type="color" name="" id="color">
+                                <button id="btnPintar">PINTAR</button>
+                                <button id="btnBorrar">BORRAR</button>
+                            </td>
+                            <td>
+                                <input type="color" name="" id="fondo">
+                            </td>
+                            <td> <button id="btnOpciones">OPCIONES</button> </td>
+                            <td> <button id="btnAyuda">AYUDA</button> </td>
+                        </tr>
+                    </thead>
+                </table>
+                <table id="opciones">
+                    <tbody>
+                        <tr>
+                            <th><label>TAMAÑO: </label></th>
+                            <td>
+                                <label for="filas">Alto</label>
+                                <input type="number" id="filas" min="1" max="100" disabled>
+                            </td>
+                            <td>
+                                <label for="columnas">Ancho</label>
+                                <input type="number" id="columnas" min="1" max="100" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label>RESOLUCIÓN: </label></th>
+                            <td>
+                                <label for="pixelesPorPunto">Píxeles </label>
+                                <input type="number" id="pixelesPorPunto" min="1" max="15">
+                            </td>
+                            <td><label for="pixelesPorPunto"> cada punto</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="app">
+                <table id="pizarra"></table>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Andrés Fernández Burón</p>
+        <p>&copy; 2021-<span id="this-year"></span></p>
+        <p>November of 2021</p>
+    </footer>
+</body>
+</html>

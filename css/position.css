@@ -1,0 +1,61 @@
+/** Copyright © Andrés Fernández Burón
+ *  November of 2021
+ *
+ *  Blackboard with vanilla Javascript
+ *  Application made using HTML, CSS, and JavaScript with the W3C event model.
+ *
+ *  File with the CSS positioning of the application view.
+ */
+
+/* -- ALL THE DOCUMENT -------------------------------- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/* -- THE PAINT BOARD -------------------------------- */
+#control-panel {
+    position: relative;
+    z-index: 5;
+}
+
+#control-panel button {
+    margin: 4px 0;
+}
+
+#app {
+    z-index: 2;
+    position: absolute;
+    left: 1vw;
+    width: 98vw;
+    overflow: hidden;
+}
+
+/* -- THE FEEDBACK POPUP ------------------------------ */
+#feedback {
+    z-index: 4;
+    position: absolute;
+    right: 1vw;
+    padding: 4vh 2vw 2vh 2vw;
+}
+
+/* -- THE PAGE FOOTER --------------------------------- */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3vh;
+    width: 100%;
+    z-index: -1;
+}
+
+footer p {
+    display: inline-block;
+    padding: 2px 0;
+    font-size: .8em;
+}

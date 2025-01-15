@@ -1,0 +1,106 @@
+/** Copyright © Andrés Fernández Burón
+ *  November of 2021
+ *
+ *  Blackboard with vanilla Javascript
+ *  Application made using HTML, CSS, and JavaScript with the W3C event model.
+ *
+ *  File with the responsive CSS styles of the application view.
+ */
+
+/* -- SMALL VIEW -------------------------------------- */
+@media screen and (max-width: 480px) {
+
+
+    /* ----  ALL THE DOCUMENT ---- */
+
+    .large-screen {
+        display: none;
+    }
+
+    button {
+        font-size: .8em !important;
+    }
+
+    /* ----  THE PAINT BOARD ---- */
+    #app {
+        top: 10vh;
+        height: 80vh;
+    }
+    
+    /* ----  THE FEEDBACK POPUP ---- */
+    #feedback {
+        top: 20%;
+        width: 90vw;
+    }
+
+    /* ----  THE PAGE FOOTER ---- */
+    footer p {
+        width: 48vw;
+    }
+    footer p:last-child {
+        display: none;
+    }
+
+}
+
+/* -- MEDIUM AND BIG VIEW ----------------------------- */
+@media screen and (min-width: 481px) {
+
+    /* ----  THE BLACKBOARD PANEL ---- */
+    #app {
+        top: 14vh;
+        height: 80vh;
+    }
+
+    /* ----  THE FEEDBACK POPUP ---- */
+    #feedback {
+        top: 15%;
+    }
+
+    /* ----  THE OPTIONS PANEL ---- */
+    #opciones {
+        position: absolute;
+        right: 0;
+    }
+
+    /* ----  THE PAGE FOOTER ---- */
+    footer p {
+        width: 30vw;
+    }
+}
+
+
+
+/* -- MEDIUM VIEW ------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 980px) {
+    
+    /* ----  THE OPTIONS PANEL ---- */
+    #opciones {
+        width: 80vw;
+    }
+
+    /* ----  THE FEEDBACK POPUP ---- */
+    #feedback {
+        width: 80vw;
+    }
+
+}
+
+/* -- BIG VIEW ---------------------------------------- */
+@media screen and (min-width: 981px) {
+    
+    /* ----  THE OPTIONS PANEL ---- */
+    #opciones {
+        width: 40vw;
+    }
+
+    /* ----  THE FEEDBACK POPUP ---- */
+    #feedback {
+        width: 80vw;
+    }
+    #feedback p {
+        font-size: 1.2em;
+        text-shadow: 2px 1px 0 darkslategray;
+    }
+
+}
