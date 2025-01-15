@@ -48,7 +48,8 @@ Esta aplicación te permite:
 ## Instalación
 Este proyecto no necesita instalación.
 
-Simplemente descárgalo y descomprímelo.
+Simplemente descárgalo y descomprímelo.  
+
 Abre la carpeta y haz doble click en el fichero index.html (o ábrelo con tu navegador web).  
 
 ## Dependencias
@@ -83,7 +84,7 @@ Este proyecto no tiene dependencias de terceros.
 <div id="readme-en">
 
 ## Description
-It's a blackboard made using just HTML, CSS and vanilla Javascript.  
+It's a paint board wrote with just HTML, CSS and vanilla Javascript and using the W3C event model.  
 
 Therefore, it can be run locally and doesn't need connection to internet.  
 
@@ -96,7 +97,8 @@ This application allows you to:
 ## Installation
 This project doesn't need installation.  
 
-Just open and unzip the folder.
+Just open and unzip the folder.  
+
 Then make double click on the index.html file (or open it with your web browser).  
 
 ## Dependencies
@@ -126,4 +128,3 @@ This project has no third-party dependencies.
 </td></tr></tbody></table>
 
 </div>
-
